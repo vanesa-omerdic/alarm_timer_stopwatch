@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+html,
+body {
+    color: #f5f5f5;
+}
+
+#main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 30%;
+    min-width: 300px;
+    height: 80vh;
+    min-height: 530px;
+    overflow: hidden;
+    background-color: #243F4D;
+    border-radius: 20px;
+}
+
+#menu-stopwatch-icon {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 2rem;
+    color: #AD886E;
+    cursor: pointer;
+}
+
+#menu-timer-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: #AD886E;
+    cursor: pointer;
+}
+
+#alarm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+}
+
+h2#current-time {
+    font-size: 4rem;
+}
+
+h2#current-date {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #AD886E;
+}
+
+label {
+    display: inline;
+    margin: 5px;
+}
+
+#set-time,
+#set-date {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 15px 5px;
+    height: 4vh;
+    width: 10rem;
+    min-width: 200px;
+    background-color: transparent;
+    color: #AD886E;
+    border: 1px solid #FCD7B5;
+    border-radius: 5px;
+}
+
+input:focus {
+    color: #f5f5f5;
+    outline: none;
+}
+
+
+#set-alarm-button {
+    font-size: 1.2em;
+    margin-top: 5px;
+    padding: 5px;
+    width: 10rem;
+    min-width: 200px;
+    background-color: #FCD7B5;
+    color: #243F4D;
+    border: 1px solid #FCD7B5;
+    border-radius: 5px;
+}
+
+#alarm-container.hidden {
+    display: none;
+}
+
+#stopwatch {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    display: inline;
+    font-size: 1.2em;
+    padding: 5px;
+    width: clamp(7rem, 10vw, 10rem);
+    /*min-width: 100px;*/
+    background-color: #FCD7B5;
+    color: #243F4D;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#reset-button {
+    background-color: #436372;
+    color: #A3BBC8;
+    cursor: default;
+}
+
+#timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+    /*??*/
+    width: 80%;
+    min-width: 280px;
+}
+
+h2#timer {
+    font-size: 4rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#timer-input-container {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+#timer-input-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    color: #AD886E;
+}
+
+#timer-input-container input {
+    margin-top: 10px;
+}
+
+#timer-input-container input:focus {
+    color: #FCD7B5;
+}
+
+input[type="number"] {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 20px 5px;
+    height: 4vh;
+    width: 5.8vw;
+    min-width: 63px;
+    background-color: transparent;
+    color: #AD886E;
+    border: 1px solid #FCD7B5;
+    border-radius: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#timer-start-stop-button,
+#timer-reset-button {
+    font-size: 1.2em;
+    padding: 5px;
+    width: clamp(7rem, 10vw, 10rem);
+    background-color: #FCD7B5;
+    color: #243F4D;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#timer-reset-button {
+    background-color: #436372;
+    color: #A3BBC8;
+    cursor: default;
+}
+
+.material-symbols-outlined {
+    font-size: 4rem;
+    color: #AD886E;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#stopwatch-icon {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#stopwatch-container.hidden {
+    display: none;
+}
+
+#timer-container.hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
