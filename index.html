@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Alarm Timer Stopwatch</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <div id="menu-icon-container">
+            <i class="material-symbols-outlined stopwatch-menu-icon" id="menu-stopwatch-icon">timer</i>
+            <i class="material-symbols-outlined" id="menu-timer-icon">timer_10_alt_1</i>
+
+        </div>
+
+        <div id="alarm-container">
+            <i class="material-symbols-outlined" id="alarm-icon">alarm</i>
+            <h2 id="current-time"></h2>
+            <h2 id="current-date"></h2>
+            <label for="set-time"><input type="time" id="set-time" name="set-time"></label>
+            <label for="set-date"><input type="date" id="set-date" name="set-date"></label>
+            <button type="button" id="set-alarm-button">Set alarm</button>
+        </div>
+
+        <div class="hidden" id="stopwatch-container">
+            <i class="material-symbols-outlined" id="stopwatch-icon">timer</i>
+            <h2 id="stopwatch">00:00:00</h2>
+            <button type="reset" class="action-button" id="reset-button">Reset</button>
+            <button type="button" class="action-button" id="start-stop-button">Start</button>
+        </div>
+
+        <div class="hidden" id="timer-container">
+            <i class="material-symbols-outlined" id="timer-icon">timer_10_alt_1</i>
+            <h2 id="timer">00:00:00</h2>
+            <div id="timer-input-container">
+                <label for="timer-hours">Hours<input type="number" id="timer-hours" name="timer-hours"></input></label>
+                <label for="timer-minuts">Minuts<input type="number" id="timer-minuts"
+                        name="timer-minuts"></input></label>
+                <label for="timer-seconds">Seconds<input type="number" id="timer-seconds"
+                        name="timer-seconds"></input></label>
+            </div>
+
+            <div id="timer-buttons">
+                <button type="button" id="timer-reset-button">Reset</button>
+                <button type="reset" id="timer-start-stop-button">Start</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
